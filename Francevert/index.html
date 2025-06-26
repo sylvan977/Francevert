@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>FranceVert | Accueil</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom right, #001f3f, #0074D9);
+      background-attachment: fixed;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: #00e6e6;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    header p {
+      font-size: 1.4rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    nav {
+      margin-top: 2rem;
+    }
+
+    nav a {
+      color: #00e6e6;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 2px solid #00e6e6;
+      border-radius: 30px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      background-color: #00e6e6;
+      color: #003147;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 1rem;
+    }
+
+    .slide-section {
+      max-width: 1200px;
+      margin-bottom: 3rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 3rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease;
+    }
+
+    .slide-section:hover {
+      transform: scale(1.02);
+    }
+
+    .slide-section h2 {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+
+    .slide-section p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      color: #e0f7ff;
+    }
+
+    .slide-section a.button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background-color: #00e6e6;
+      color: #003147;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .slide-section a.button:hover {
+      background-color: #00bfbf;
+    }
+
+    footer {
+      background-color: #001f3f;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      color: #ffffff;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #00e6e6;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FranceVert</h1>
+    <p>Une immersion interactive et pédagogique dans le monde du transport de marchandises : découvrez, explorez, comprenez et testez vos connaissances.</p>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="routier.html" title="Transport routier">Routier</a>
+      <a href="maritime.html" title="Transport maritime">Maritime</a>
+      <a href="ferroviaire.html" title="Transport ferroviaire">Ferroviaire</a>
+      <a href="aerien.html" title="Transport aérien">Aérien</a>
+      <a href="quiz-transport.html" title="Quiz">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="slide-section">
+      <h2>Pourquoi FranceVert ?</h2>
+      <p>FranceVert est un site éducatif dédié à l’univers du transport de marchandises. Il vous propose de découvrir les différents modes de transport, leurs rôles essentiels dans le commerce mondial, leurs impacts environnementaux, et les perspectives d’avenir pour un transport plus vert et plus intelligent.</p>
+    </section>
+
+    <section class="slide-section">
+      <h2>Transport Routier</h2>
+      <p>Explorez l’histoire du transport routier, ses avantages, ses inconvénients, ses innovations et son rôle dans la chaîne logistique. Découvrez des vidéos, des simulations, des calculs pratiques, et bien plus.</p>
+      <a href="routier.html" class="button">Découvrir le transport routier</a>
+    </section>
+
+    <section class="slide-section">
+      <h2>Transport Maritime</h2>
+      <p>Apprenez tout sur les navires, les ports, les conteneurs, les règles de douane, l’histoire et les impacts environnementaux. Une plongée interactive dans le monde du commerce maritime.</p>
+      <a href="maritime.html" class="button">Explorer le transport maritime</a>
+    </section>
+
+    <section class="slide-section">
+      <h2>Transport Ferroviaire</h2>
+      <p>Découvrez un transport à la fois écologique et performant, ses infrastructures, ses enjeux logistiques et ses perspectives pour le futur. Animations et explications complètes à l'appui.</p>
+      <a href="ferroviaire.html" class="button">Explorer le transport ferroviaire</a>
+    </section>
+
+    <section class="slide-section">
+      <h2>Transport Aérien</h2>
+      <p>Plongez dans la vitesse et la technologie du transport aérien. Apprenez son fonctionnement, ses coûts, sa pollution et les efforts entrepris pour le rendre plus durable.</p>
+      <a href="aerien.html" class="button">Explorer le transport aérien</a>
+    </section>
+
+    <section class="slide-section">
+      <h2>Quiz & Géographie</h2>
+      <p>Teste tes connaissances sur les différents modes de transport et la géographie des échanges internationaux grâce à des quiz ludiques et éducatifs.</p>
+      <a href="quiz-transport.html" class="button">Commencer le quiz</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>FranceVert © 2025 | <a href="contact.html">Contact</a></p>
+  </footer>
+</body>
+</html>
