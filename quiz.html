@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>FranceVert | Quiz sur le Transport</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e0f2fe, #ffffff);
+      color: #333;
+    }
+    header {
+      background-color: #0284c7;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .question {
+      margin-bottom: 2rem;
+    }
+    .question h3 {
+      margin-bottom: 1rem;
+      color: #0369a1;
+    }
+    label {
+      display: block;
+      margin: 0.5rem 0;
+    }
+    button {
+      background-color: #0284c7;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .back-button {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .back-button a {
+      text-decoration: none;
+      color: #0284c7;
+      font-weight: bold;
+    }
+    .result {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <header>Quiz sur le Transport de Marchandises</header>
+  <div class="container">
+    <form id="quizForm">
+      <!-- Questions 1 à 20 -->
+      <div class="question">
+<h3>1. Quel est le principal avantage du transport aérien ?</h3>
+<label><input type="radio" name="q1"> Coût bas</label>
+<label><input type="radio" name="q1"> Grande capacité</label>
+<label><input type="radio" name="q1"> Rapidité</label>
+</div>
+<div class="question">
+<h3>2. Pourquoi utilise-t-on le transport ferroviaire ?</h3>
+<label><input type="radio" name="q2"> Rapide sur courtes distances</label>
+<label><input type="radio" name="q2"> Écologique et fiable</label>
+<label><input type="radio" name="q2"> Pas besoin de rails</label>
+</div>
+<div class="question">
+<h3>3. Quelle est la fonction d’un conteneur ?</h3>
+<label><input type="radio" name="q3"> Protéger et standardiser les marchandises</label>
+<label><input type="radio" name="q3"> Décorer le navire</label>
+<label><input type="radio" name="q3"> Servir d’entrepôt temporaire</label>
+</div>
+<div class="question">
+<h3>4. Qu’est-ce qu’un port sec ?</h3>
+<label><input type="radio" name="q4"> Un port sans eau</label>
+<label><input type="radio" name="q4"> Un terminal intérieur connecté à un port maritime</label>
+<label><input type="radio" name="q4"> Un dépôt douanier</label>
+</div>
+<div class="question">
+<h3>5. Quel transport est idéal pour les grandes distances à bas coût ?</h3>
+<label><input type="radio" name="q5"> Aérien</label>
+<label><input type="radio" name="q5"> Maritime</label>
+<label><input type="radio" name="q5"> Routier</label>
+</div>
+<div class="question">
+<h3>6. Quel document est utilisé pour le transport aérien ?</h3>
+<label><input type="radio" name="q6"> CMR</label>
+<label><input type="radio" name="q6"> LTA (AWB)</label>
+<label><input type="radio" name="q6"> B/L (Bill of Lading)</label>
+</div>
+<div class="question">
+<h3>7. Quel est un inconvénient du transport routier ?</h3>
+<label><input type="radio" name="q7"> Très lent</label>
+<label><input type="radio" name="q7"> Coût élevé</label>
+<label><input type="radio" name="q7"> Pollution élevée</label>
+</div>
+<div class="question">
+<h3>8. Quel est l'avantage du transport ferroviaire ?</h3>
+<label><input type="radio" name="q8"> Moins polluant</label>
+<label><input type="radio" name="q8"> Pas besoin de rails</label>
+<label><input type="radio" name="q8"> Plus rapide que l’avion</label>
+</div>
+<div class="question">
+<h3>9. Que fait une plateforme multimodale ?</h3>
+<label><input type="radio" name="q9"> Change de mode de transport</label>
+<label><input type="radio" name="q9"> Distribue les colis</label>
+<label><input type="radio" name="q9"> Stocke uniquement du vrac</label>
+</div>
+<div class="question">
+<h3>10. Qui contrôle les marchandises aux frontières ?</h3>
+<label><input type="radio" name="q10"> La Poste</label>
+<label><input type="radio" name="q10"> La Douane</label>
+<label><input type="radio" name="q10"> Le Ministère des Transports</label>
+</div>
+<div class="question">
+<h3>11. Quel type de marchandise est souvent transporté par avion ?</h3>
+<label><input type="radio" name="q11"> Produits en vrac</label>
+<label><input type="radio" name="q11"> Marchandises urgentes et périssables</label>
+<label><input type="radio" name="q11"> Bois de construction</label>
+</div>
+<div class="question">
+<h3>12. Quel est l'intérêt principal du transport maritime ?</h3>
+<label><input type="radio" name="q12"> Rapidité</label>
+<label><input type="radio" name="q12"> Capacité et bas coût</label>
+<label><input type="radio" name="q12"> Flexibilité</label>
+</div>
+<div class="question">
+<h3>13. Que signifie 'ULD' ?</h3>
+<label><input type="radio" name="q13"> Universal Loading Dock</label>
+<label><input type="radio" name="q13"> Unit Load Device</label>
+<label><input type="radio" name="q13"> Unité de Livraison Directe</label>
+</div>
+<div class="question">
+<h3>14. Quel type de transport utilise le plus les conteneurs ?</h3>
+<label><input type="radio" name="q14"> Ferroviaire</label>
+<label><input type="radio" name="q14"> Maritime</label>
+<label><input type="radio" name="q14"> Routier</label>
+</div>
+<div class="question">
+<h3>15. Quelle est la principale pollution liée au transport routier ?</h3>
+<label><input type="radio" name="q15"> Pollution lumineuse</label>
+<label><input type="radio" name="q15"> Pollution sonore</label>
+<label><input type="radio" name="q15"> Pollution atmosphérique</label>
+</div>
+<div class="question">
+<h3>16. Quel organisme contrôle les douanes en France ?</h3>
+<label><input type="radio" name="q16"> La SNCF</label>
+<label><input type="radio" name="q16"> La DGDDI</label>
+<label><input type="radio" name="q16"> Le Ministère des Transports</label>
+</div>
+<div class="question">
+<h3>17. Quelle est la mission principale de la douane ?</h3>
+<label><input type="radio" name="q17"> Transport de colis</label>
+<label><input type="radio" name="q17"> Sécurité et régulation des échanges</label>
+<label><input type="radio" name="q17"> Livraisons urgentes</label>
+</div>
+<div class="question">
+<h3>18. Quel type de marchandises peut être interdit à l'import ?</h3>
+<label><input type="radio" name="q18"> Produits agricoles locaux</label>
+<label><input type="radio" name="q18"> Produits illicites ou dangereux</label>
+<label><input type="radio" name="q18"> Produits déjà disponibles</label>
+</div>
+<div class="question">
+<h3>19. Le transport ferroviaire est plus écologique car :</h3>
+<label><input type="radio" name="q19"> Il consomme peu de carburant</label>
+<label><input type="radio" name="q19"> Il est subventionné</label>
+<label><input type="radio" name="q19"> Il utilise des pneus recyclés</label>
+</div>
+<div class="question">
+<h3>20. Pourquoi recruter de nouvelles personnes dans le secteur logistique ?</h3>
+<label><input type="radio" name="q20"> Pour livrer les lettres</label>
+<label><input type="radio" name="q20"> Pour renforcer les chaînes logistiques modernes</label>
+<label><input type="radio" name="q20"> Pour faire voler les avions</label>
+</div>
+
+      <button type="submit">Valider mes réponses</button>
+    </form>
+    <div id="result" class="result"></div>
+    <div class="back-button">
+      <a href="index.html">⬅ Retour à l'accueil</a>
+      <br><br>
+      <button onclick="location.reload()">🔁 Recommencer le quiz</button>
+    </div>
+  </div>
+
+  <script>
+    const answers = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+    document.getElementById('quizForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      let score = 0;
+      for (let i = 1; i <= answers.length; i++) {
+        const radios = document.getElementsByName('q' + i);
+        for (let j = 0; j < radios.length; j++) {
+          if (radios[j].checked && j === answers[i - 1]) {
+            score++;
+          }
+        }
+      }
+      document.getElementById('result').innerText = `✅ Vous avez obtenu ${score}/${answers.length} bonnes réponses.`;
+    });
+  </script>
+</body>
+</html>
